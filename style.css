@@ -200,7 +200,7 @@ nav {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
+    grid-template-columns: repeat(5, 1fr); /* 4 columnas fijas */
     gap: 1.5rem;
     margin-top: 3rem;
 }
@@ -577,4 +577,5 @@ footer {
     .skills-grid {
         grid-template-columns: 1fr;
     }
+
 }
