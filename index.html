@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Leandro Loza - Portafolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Navegación -->
-    <nav id="navbar">
+    <!-- Navigation -->
+    <nav>
         <div class="container nav-container">
-            <a href="#" class="logo">Port<span>folio</span></a>
+            <a href="#" class="logo">Leandro Loza</a>
             <ul class="nav-links">
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#about">Sobre Mí</a></li>
@@ -31,52 +32,103 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container hero-content">
-            <h3 class="hero-subtitle">HOLA, MI NOMBRE ES</h3>
-            <h1 class="hero-title">Leandro Loza<br></h1>
-            <p class="hero-description">Estudiante de Informática con conocimientos en programación, desarrollo web y
-                manejo de hardware. Apasionado por aprender
-                nuevas tecnologías y participar en proyectos que me permitan crecer profesionalmente.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
-                <a href="#contact" class="btn btn-outline">Contáctame</a>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-subtitle">Desarrollador Web</div>
+                <h1 class="hero-title">Hola, soy Leandro Loza</h1>
+                <p class="hero-description">
+                    Estudiante de Informática especializado en desarrollo web y programación, con un enfoque principal en el desarrollo backend y gestión de bases de datos.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-outline">Contáctame</a>
+                </div>
             </div>
         </div>
-        <div class="hero-background"></div>
     </section>
 
-    <!-- Sobre Mi Section -->
-    <section class="about" id="about">
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="skills-container">
-                        <h4 class="skills-title">Mis habilidades técnicas</h4>
-                        <div class="skills-grid">
-                            <div class="skill">
-                                <div class="skill-icon">
-                                    <i class="fab fa-html5"></i>
-                                </div>
-                                <div class="skill-name">HTML5</div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon">
-                                    <i class="fab fa-css3-alt"></i>
-                                </div>
-                                <div class="skill-name">CSS3</div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon">
-                                    <i class="fab fa-js"></i>
-                                </div>
-                                <div class="skill-name">JavaScript</div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon">
-                                    <i class="fab fa-php"></i>
-                                </div>
-                                <div class="skill-name">PHP</div>
-                            </div>
+            <div class="section-header">
+                <h2 class="section-title">Mis Proyectos</h2>
+                <p class="section-subtitle">
+                    Algunos de los proyectos en los que he trabajado
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/Bodas&Encanto.png" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bodas & Encanto</h3>
+                        <p class="project-description">
+                            Bodas & Encanto es una web que centraliza la planificación de bodas, permite confirmar asistencia y personalizar el diseño, ofreciendo ahorro en invitaciones y mejor organización.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Ver Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/proyectoCSS.png" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Aplicación Web Responsiva</h3>
+                        <p class="project-description">
+                            Playa El Doradillo cuenta con una web estática que muestra sus atractivos de forma clara y visual, accesible desde cualquier dispositivo. Futuras mejoras: galería de fotos, mapa interactivo y contacto en línea.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Ver Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/barrioGestion.png" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BarrioGestion</h3>
+                        <p class="project-description">
+                            Barrio Mando centraliza la gestión de barrios privados, controlando accesos, expensas, comunicación y seguridad, mejorando eficiencia y transparencia. Futuras mejoras: app móvil, domótica y análisis predictivo.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ByteCoderX/BarrioGestion_moyano" class="project-link">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                            <a href="https://panchosrv.bringfeel.com.ar/tesisde/" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Ver Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -84,44 +136,177 @@
         </div>
     </section>
 
-    <!-- Proyectos Seccion -->
-    <section class="projects" id="projects">
+    <!-- About Section -->
+    <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">Mis Proyectos</h2>
-            <div class="projects-grid">
-                <!-- Aquí van tus proyectos como antes -->
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mí</h2>
+                <p class="section-subtitle">
+                    Conoce más sobre mi experiencia y las tecnologías con las que trabajo
+                </p>
             </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Mi Experiencia</h3>
+                    <p>
+                        Como estudiante de Informática, he desarrollado una sólida base en
+                        programación y desarrollo web. Mi enfoque está en crear aplicaciones
+                        web modernas y eficientes utilizando las mejores prácticas de la industria.
+                    </p>
+                    <p>
+                        Tengo experiencia trabajando con diversas tecnologías frontend y backend,
+                        y siempre estoy buscando nuevas oportunidades para aprender y crecer
+                        profesionalmente en el campo de la tecnología.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div
+                        style="background: var(--surface); padding: 2rem; border-radius: 12px; border: 1px solid var(--border);">
+                        <h4 style="margin-bottom: 1rem; text-align: center;">Enfoque Principal</h4>
+                        <ul style="list-style: none; color: var(--text-secondary);">
+                            <li style="margin-bottom: 0.5rem;">✓ Desarrollo Web Frontend</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Programación Backend</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Manejo de Hardware</li>
+                            <li>✓ Aprendizaje Continuo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="skill-name">HTML5</div>
+                    <div class="skill-level">Estructura y semántica web</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="skill-name">CSS3</div>
+                    <div class="skill-level">Diseño y maquetación</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-level">Interactividad y funcionalidad</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <div class="skill-name">PHP</div>
+                    <div class="skill-level">Desarrollo backend</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="skill-name">React</div>
+                    <div class="skill-level">Desarrollo frontend avanzado</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-level">Servidor y APIs</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="skill-name">C++</div>
+                    <div class="skill-level">Programación y algoritmos</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="skill-name">Java</div>
+                    <div class="skill-level">Programación orientada a objetos</div>
+                </div>
+            </div>            
         </div>
     </section>
 
-    <!-- Servicios Section -->
+    <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title">Mis Servicios</h2>
+            <div class="section-header">
+                <h2 class="section-title">Mis Servicios</h2>
+                <p class="section-subtitle">
+                    Servicios que ofrezco para ayudarte con tus proyectos tecnológicos
+                </p>
+            </div>
+
             <div class="services-grid">
-                <!-- Aquí van tus servicios como antes -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Desarrollo Web</h3>
+                    <p class="service-description">
+                        Creación de sitios web modernos y responsivos utilizando
+                        las últimas tecnologías web.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="service-title">Gestión de Bases de Datos</h3>
+                    <p class="service-description">
+                        Diseño, implementación y optimización de bases de datos
+                        para aplicaciones web.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">Soporte Técnico</h3>
+                    <p class="service-description">
+                        Mantenimiento y soporte técnico para hardware y software
+                        de sistemas informáticos.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contacto Section -->
+    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Contáctame</h2>
+            <div class="section-header">
+                <h2 class="section-title">Contáctame</h2>
+                <p class="section-subtitle">
+                    ¿Tienes un proyecto en mente? Me encantaría conversar contigo
+                </p>
+            </div>
+
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>¿Tienes un proyecto en mente? <span class="highlight">Hablemos.</span></h3>
+                    <h3>Trabajemos juntos</h3>
                     <p>
-                        Estoy siempre abierto a discutir nuevos proyectos, ideas creativas u oportunidades para ser
-                        parte de tus visiones.
+                        Estoy disponible para discutir nuevos proyectos, colaboraciones
+                        y oportunidades de aprendizaje. No dudes en contactarme.
                     </p>
+
                     <div class="contact-details">
                         <div class="contact-detail">
                             <div class="detail-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="detail-text">
-                                <a href="mailto:lozaleandro54@gmail.com">lozaleandr54@gmail.com</a>
+                                <a href="mailto:lozaleandro54@gmail.com">lozaleandro54@gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-detail">
@@ -141,19 +326,20 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/leandro-loza-241596333/" class="social-link"
-                            title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/leandro-loza-241596333/" class="social-link">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com/lozalen341" class="social-link" title="GitHub">
+                        <a href="https://github.com/lozalen341" class="social-link">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.instagram.com/leandroloza36/" class="social-link" title="Instagram">
+                        <a href="https://www.instagram.com/leandroloza36/" class="social-link">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>
+
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
@@ -168,7 +354,7 @@
                         <div class="form-group">
                             <textarea class="form-control" name="message" placeholder="Tu Mensaje" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje</button>
                     </form>
                 </div>
             </div>
@@ -179,19 +365,32 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    Port<span>folio</span>
+                <div class="footer-section">
+                    <h4>Leandro Loza</h4>
+                    <p style="color: #d1d5db; margin-top: 0.5rem;">
+                        Desarrollador Web y Estudiante de Informática
+                    </p>
                 </div>
-                <div class="footer-links">
-                    <a href="#home" class="footer-link">Inicio</a>
-                    <a href="#about" class="footer-link">Sobre Mí</a>
-                    <a href="#projects" class="footer-link">Proyectos</a>
-                    <a href="#services" class="footer-link">Servicios</a>
-                    <a href="#contact" class="footer-link">Contacto</a>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <div class="footer-links">
+                        <a href="#home" class="footer-link">Inicio</a>
+                        <a href="#about" class="footer-link">Sobre Mí</a>
+                        <a href="#projects" class="footer-link">Proyectos</a>
+                        <a href="#contact" class="footer-link">Contacto</a>
+                    </div>
                 </div>
-                <div class="copyright">
-                    &copy; 2025 Leandro Loza. Todos los derechos reservados.
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="footer-links">
+                        <a href="mailto:lozaleandro54@gmail.com" class="footer-link">Email</a>
+                        <a href="tel:+5491127334694" class="footer-link">Teléfono</a>
+                        <a href="#" class="footer-link">LinkedIn</a>
+                    </div>
                 </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Leandro Loza. Todos los derechos reservados.
             </div>
         </div>
     </footer>
@@ -208,6 +407,7 @@
             navLinks.classList.toggle('active');
         });
 
+        // Cerrar menú al hacer clic en un enlace
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
@@ -215,32 +415,77 @@
             });
         });
 
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
 
-        // Formulario de contacto
+        // Formulario de contacto con EmailJS
         emailjs.init("sWq_QYI8aUZq39oQW");
         const contactForm = document.getElementById("contactForm");
 
         if (contactForm) {
             contactForm.addEventListener("submit", function (e) {
                 e.preventDefault();
+
+                // Cambiar texto del botón mientras se envía
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Enviando...';
+                submitBtn.disabled = true;
+
                 emailjs.sendForm("service_lldllbm", "template_sku16ek", this)
                     .then(() => {
-                        alert("Mensaje enviado con éxito");
+                        alert("¡Mensaje enviado con éxito! Te contactaré pronto.");
                         contactForm.reset();
                     })
                     .catch(err => {
-                        alert("Error: " + JSON.stringify(err));
+                        alert("Hubo un error al enviar el mensaje. Por favor intenta nuevamente.");
+                        console.error("Error:", err);
+                    })
+                    .finally(() => {
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
                     });
             });
         }
+
+        // Animación al hacer scroll (opcional y sutil)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Aplicar animación sutil a las secciones
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Hacer la primera sección visible inmediatamente
+        document.querySelector('.hero').style.opacity = '1';
+        document.querySelector('.hero').style.transform = 'translateY(0)';
     </script>
 </body>
+
 </html>
