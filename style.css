@@ -59,18 +59,64 @@ nav {
     display: flex;
     list-style: none;
     gap: 2rem;
+    justify-content: center;
+    padding: 0;
 }
 
 .nav-links a {
+    position: relative;
+    display: block;
     text-decoration: none;
-    color: var(--text-secondary);
+    color: var(--surface);  /* color original del código fuente */
     font-weight: 500;
-    transition: color 0.2s ease;
+    font-size: 16px;         /* dimensiones originales */
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid var(--primary-light);
+    border-bottom: 2px solid var(--primary-light);
+    transform: scaleY(2);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-light);
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: -1;
 }
 
 .nav-links a:hover {
-    color: var(--primary);
+    color: var(--text-primary);  /* texto blanco al hacer hover */
 }
+
+.nav-links a:hover::before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.nav-links a:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
 
 .hamburger {
     display: none;
@@ -81,7 +127,7 @@ nav {
 .hamburger span {
     width: 24px;
     height: 2px;
-    background: var(--text-primary);
+    background: var(--primary);
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -316,8 +362,13 @@ nav {
     gap: 0.5rem;
 }
 
+#otros-proyectos{
+    background-color: var(--background);
+}
+
 /* Services Section */
 .services {
+    background-color: var(--surface);
     padding: 6rem 0;
 }
 
@@ -361,7 +412,7 @@ nav {
 /* Contact Section */
 .contact {
     padding: 6rem 0;
-    background: var(--surface);
+    background: var(--background);
 }
 
 .contact-content {
@@ -463,10 +514,10 @@ textarea.form-control {
     min-height: 120px;
 }
 
-/* Footer */
+/* footer */
 footer {
-    background: var(--text-primary);
-    color: white;
+    background: var(--surface); /* antes era var(--text-primary), ahora más oscuro */
+    color: var(--text-primary);
     padding: 3rem 0 2rem;
     text-align: center;
 }
@@ -480,6 +531,7 @@ footer {
 
 .footer-section h4 {
     margin-bottom: 1rem;
+    color: var(--primary); /* destaca los títulos */
 }
 
 .footer-links {
@@ -489,20 +541,21 @@ footer {
 }
 
 .footer-link {
-    color: #d1d5db;
+    color: var(--text-secondary); /* más suave que blanco puro */
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .footer-link:hover {
-    color: white;
+    color: var(--primary); /* cambio a tu color principal al pasar el mouse */
 }
 
 .footer-bottom {
     padding-top: 2rem;
-    border-top: 1px solid #374151;
-    color: #9ca3af;
+    border-top: 1px solid var(--border-light);
+    color: var(--text-light); /* gris más suave para el copyright */
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
